@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+      font-size: 10px;
+    }
+    a {
+      text-decoration: none;
+    }
+    progress{
+        width: 168px;
+        height: 5px;
+        color:#233333;
+        background:#EFEFF4;
+        border-radius: 0rem;
+    }
+    progress::-webkit-progress-bar{     
+        background-color: #f2f2f2;
+        border-radius: 0rem;
+    }
+    progress::-webkit-progress-value{
+          background: #233333;
+          border-radius: 0rem; 
+    }
+    .none-disc-li {
+      list-style-type: none;
+    }
+    /* left */
+    #left {
+      width: 35%;
+      height: 100%;
+      padding: 50px;
+      background-color: rgb(73, 98, 103);
+      overflow:hidden;
+      box-sizing: border-box;
+      color: white;
+    }
+    .imgPhoto {
+      height:inherit;
+      width: inherit;
+    }
+    #left li {
+      word-break: break-all;
+      display: flex;
+      padding: 10px 0;
+      
+    }
+    #left li>i {
+      flex: 1;
+    }
+    #left li>span {
+      flex: 9;
+    }
+    .border-class,.border-class-right {
+      margin-top: 20px;
+      padding-top: 5px;
+      border-top: 1px solid white;
+    }
+    /* main */
+    #main {
+      width: 65%;
+      padding: 50px;
+      box-sizing: content-box;
+    }
+    .topic {
+      color: rgb(73, 98, 103);
+      font-weight: bold;
+      font-size: x-large;
+      border-bottom: 5px solid black;
+    }
+    .border-class-right {
+      border-top: 1px solid black;
+    }
+    .ul-summary {
+      padding: 14px 0 0 14px;
+      list-style-type: disc;
+    }
+    .border-class-right>ul {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div style="height: 100%; width: 100%;display: flex;">
+    <div id="left">
+      <div style="width: 100%;
+      margin: 0 auto;">
+        <img src="./IMG_20200401_113620.jpg" alt="" class="imgPhoto">
+      </div>
+      <div class="border-class">
+        <h2>CONTACT</h1>
+        <ul class="none-disc-li">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>63 Old Dunbarton Rd, Glasgow, G3 8RF</span>
+          </li>
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            <span>+4407536957266</span>
+          </li>
+          <li>
+            <i class="fas fa-paper-plane"></i>
+            <span>zhaoweiwei_julia@outlook.com</span>
+          </li>
+        </ul>
+      </div>
+      <div class="border-class">
+        <h2>SKILLS</h1>
+        <ul>
+          <li>
+            <progress max="10" value="7" style="flex:2"></progress>
+            <span>Vue.js, jQuery</span>
+          </li>
+          <li>
+            <progress max="10" value="5" style="flex:2"></progress>
+            <span>JavaScript, react.js, Java</span>
+          </li>
+          <li>
+            <progress max="10" value="5" style="flex:2"></progress>
+            <span>elementUI, Bootstrap</span>
+          </li>
+          <li>
+            <progress max="10" value="5" style="flex:2"></progress>
+            <span>HTML, CSS</span>
+          </li>
+          <li>
+            <progress max="10" value="2" style="flex:2"></progress>
+            <span>node.js, python</span>
+          </li>
+          <li>
+            <span>Japanese(N2)</span>
+          </li>
+          <li>
+            <span>English(Duolingo:110, CET-6)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="main">
+      <div class="topic">
+        <h1>Weiwei Zhao</h1>
+      </div>
+      <div class="border-class-right">
+        <h1>PROFESSIONAL SUMMARY</h1>
+        <ul class="ul-summary">
+          <li>Passionate, diligent and Communicative</li>
+          <li>Good team working ability</li>
+          <li>Good sense of responsibility and clear logic </li>
+          <li>Excellent learning ability</li>
+          <li>Innovative User Interface Developer with extensive experience in the design, implementation and advancement of management web platform</li>
+          <li>Highly skilled in Git and VScode tools, with excellent project management abilities for high-performing UI development.</li>
+        </ul>
+      </div>
+      <div class="border-class-right">
+        <h1>WORK HISTORY</h1>
+        <ul class="none-disc-li">
+          <li>
+            <h3>Pactera Technology International Ltd</h3>
+            <div><span>Front-end Developer</span><span>01/2021-07/2020</span></div>
+            <h3>PROJECT EXPERIENCE</h3>
+            <ul class="ul-summary">
+              <li>Lakala Internet Payment Platform</li>
+              <li>Murong Financial Chain Project</li>
+              <li>Safepass Internet Payment Platform</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="none-disc-li">
+          <li>
+            <h3>Shanghai Murong Information Technology Co., Ltd</h3>
+            <div><span>Front-end Developer</span><span>07/2017-04/2020</span></div>
+            <h3>PROJECT EXPERIENCE</h3>
+            <ul class="ul-summary">
+              <li></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="none-disc-li">
+          <li>
+            <h3>Shanghai Lianlian Well-Chilled E-Commerce Co., Ltd</h3>
+            <div><span>Front-end Developer</span><span>09/2016-12/2016</span></div>
+            <h3>PROJECT EXPERIENCE</h3>
+            <ul class="ul-summary">
+              <li></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="none-disc-li">
+          <li>
+            <h3>Network Cultural Studio for College Student Hefei University of Technology</h3>
+            <div><span>Front-end Developer</span><span>03/2016-08/2016</span></div>
+            <h3>PROJECT EXPERIENCE</h3>
+            <ul class="ul-summary">
+              <li></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="border-class-right">
+        <h1>EDUCATION</h1>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
